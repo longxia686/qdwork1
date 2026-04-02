@@ -1,0 +1,150 @@
+/* 外层容器 */
+.news-wrap {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 18px 22px 40px;
+  background: #fff;
+}
+
+.crumbs{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 6px 0 14px;
+  color: #6b6b6b;
+  font-size: 14px;
+}
+.crumb{
+  color: #6b6b6b;
+}
+.crumb.pill{
+  background: #eeeeee;
+  border: 1px solid #d3d3d3;
+  border-radius: 999px;
+  padding: 4px 12px;
+}
+.crumb.pill.active{
+  background: #e8f3ff;
+  border-color: #9ac6ff;
+  color: #0b5aa6;
+}
+.crumb-sep{
+  color: #9b9b9b;
+  margin: 0 2px;
+}
+
+.news-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+/* 左右主内容两列 */
+.content{
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  gap: 26px; /* 中间空隙变小 */
+}
+
+.hot-title {
+  /* 不使用绝对定位，避免串到右上角（该类会用于右侧热文标题） */
+  position: static;
+}
+
+.channels {
+  display: flex;
+  gap: 10px;
+}
+.tag {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: #e7e7e7;
+  color: #333;
+  text-decoration: none;
+  border: 1px solid #d2d2d2;
+  font-size: 14px;
+}
+.tag--active {
+  background: #d9ecff;
+  border-color: #8cc0ff;
+}
+
+.news-list {
+  margin-top: 8px;
+  display: grid;
+  gap: 0; /* 保持上下模块连成整体 */
+}
+
+.news-item {
+  border: none;
+  padding: 12px 12px 14px;
+  background: #fff; /* 去掉浅灰背景 */
+}
+
+/* 上下相邻卡片无边框，不再需要重复边框处理 */
+.news-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 10px;
+  color: #333;
+}
+.news-body {
+  display: block; /* 只显示缩略图区域，不再占用右侧大图空间 */
+  width: 100%;
+}
+
+/* 左侧三张小图（占等分列） */
+.thumbs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 每行两个缩略图 */
+  gap: 22px; /* 两图之间空隙稍大 */
+  max-width: 520px; /* 让缩略图宽度更大一点 */
+  width: 100%;
+}
+.thumb {
+  height: 150px; /* 左侧缩略图更大一点 */
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  border: none;
+}
+
+/* 右侧大图区域 */
+.hero {
+  height: 110px; /* 进一步减小右侧大图高度 */
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  border: none;
+}
+
+/* 右侧热文推荐 */
+.hot-list{
+  margin-top: 8px;
+}
+.hot-heading{
+  font-size: 18px;
+  color: #333;
+  margin: 0 0 8px 0;
+}
+.hot-item{
+  margin-bottom: 12px;
+}
+.hot-title{
+  font-size: 14px;
+  color: #333;
+  margin: 0 0 6px 0;
+  line-height: 1.4;
+}
+.hot-thumb{
+  width: 100%;
+  max-width: 520px; /* 限制热文图片宽度 */
+  height: 220px; /* 第三张图片更大一点 */
+  object-fit: cover;
+  border: none;
+  display: block;
+}
