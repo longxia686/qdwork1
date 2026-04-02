@@ -74,17 +74,17 @@
 
 .photo-cell {
     background: #ffffff;
-    width: 130px; /* 让照片列宽贴近图片，避免右侧空白长条 */
+	width: 150px; /* 适当加宽，便于放大图片并填满两行高度 */
     padding: 0;
 }
 
 .photo-img {
-    width: 90px;
-    height: 110px;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
-    border: 1px solid #bdbdbd;
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* 填满单元格，按比例裁剪 */
+	display: block;
+	margin: 0;
+	border: 0;
 }
 
 .title-icon {
