@@ -1,137 +1,270 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>实验3 个人简历</title>
-    <link rel="stylesheet" href="lab1-108-李泰锟-styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人信息登记表</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
 </head>
 <body>
-    <div class="resume-stage">
-        <div class="resume-wrap resume-wrap-centered">
-            <h1 class="resume-title">个人简历</h1>
+  <div class="page-container">
+    <header class="page-header">
+      <h1 class="main-title">个 人 信 息 登 记 表</h1>
+      <p class="subtitle">Personal Information Registration Form</p>
+    </header>
 
-            <div class="resume-row resume-row-basic">
-                <div class="resume-grid">
-                    <div class="resume-group">
-                        <div class="label-cell">姓名</div>
-                        <div class="value-cell"><div class="cell-text">李泰锟</div></div>
-                    </div>
-                    <div class="resume-group">
-                        <div class="label-cell">性别</div>
-                        <div class="value-cell"><div class="cell-text">男</div></div>
-                    </div>
-                    <div class="resume-group">
-                        <div class="label-cell">年龄</div>
-                        <div class="value-cell"><div class="cell-text">20</div></div>
-                    </div>
-                    <div class="resume-group">
-                        <div class="label-cell"><span class="title-icon" aria-hidden="true"></span> 籍贯</div>
-                        <div class="value-cell"><div class="cell-text">山东省临沂市沂水县</div></div>
-                    </div>
-                    <div class="resume-group">
-                        <div class="label-cell"><span class="title-icon" aria-hidden="true"></span> 联系电话</div>
-                        <div class="value-cell"><div class="cell-text">18306479192</div></div>
-                    </div>
-                    <div class="resume-group">
-                        <div class="label-cell"><span class="title-icon" aria-hidden="true"></span> 电子邮箱</div>
-                        <div class="value-cell"><div class="cell-text">2214045037@qq.com</div></div>
-                    </div>
-                    <div class="resume-group">
-                        <div class="label-cell"><span class="title-icon" aria-hidden="true"></span> 学历</div>
-                        <div class="value-cell"><div class="cell-text">本科</div></div>
-                    </div>
-                    <div class="resume-group">
-                        <div class="label-cell"><span class="title-icon" aria-hidden="true"></span> 健康状况</div>
-                        <div class="value-cell"><div class="cell-text">良好</div></div>
-                    </div>
-                    <div class="resume-group">
-                        <div class="label-cell"><span class="title-icon" aria-hidden="true"></span> 婚姻状况</div>
-                        <div class="value-cell"><div class="cell-text">未婚</div></div>
-                    </div>
-                    <div class="resume-group">
-                        <div class="label-cell"><span class="title-icon" aria-hidden="true"></span> 求职意向</div>
-                        <div class="value-cell"><div class="cell-text">物联网开发工程师</div></div>
-                    </div>
-                    <div class="resume-group">
-                        <div class="label-cell"><span class="title-icon" aria-hidden="true"></span> 专业</div>
-                        <div class="value-cell"><div class="cell-text">计算机科学与技术</div></div>
-                    </div>
-                    <div class="resume-group">
-                        <div class="label-cell"><span class="title-icon" aria-hidden="true"></span> 毕业院校</div>
-                        <div class="value-cell"><div class="cell-text">烟台理工学院</div></div>
-                    </div>
-                </div>
-                <div class="photo-cell photo-panel">
-                    <div class="photo-box">
-                        <img src="tupian2.jpg" alt="照片" class="photo-img">
-                        <button class="play-btn" type="button" aria-label="播放介绍视频">▶</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="resume-row">
-                <div class="label-cell">技能证书</div>
-                <div class="value-cell resume-wide"><div class="cell-text">会 Java、VUE3、ESP32 开发板、ESP32-IDF、STM32、SpringBoot、Auto.js、微信小程序</div></div>
-            </div>
-
-            <div class="resume-row">
-                <div class="label-cell">个人特长与爱好</div>
-                <div class="value-cell resume-wide"><div class="cell-text">学习计算机</div></div>
-            </div>
-
-            <div class="resume-row">
-                <div class="label-cell">项目经历</div>
-                <div class="value-cell resume-wide">
-                    <div class="project-grid" aria-label="项目经历图标">
-                        <div class="project-text cell-text">
-                            基于ESP32的智能手环和微信小程序<br>
-                            基于ESP32的自动关窗系统和微信小程序<br>
-                            基于ESP32的厨房报警系统和微信小程序<br>
-                            基于ESP32的温室大棚系统和微信小程序<br>
-                            打水机的管理端页面及其后端<br>
-                            及其日本的科技型官网页面，以及国内科技型公司的官网前后端<br>
-                            基于stm的智能水族馆系统
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="resume-row">
-                <div class="label-cell">自我评价</div>
-                <div class="value-cell resume-wide">
-                    <p class="self-eval">
-                        我性格踏实认真，做事有计划、讲效率，也愿意主动沟通协调。
-                        在学习和项目实践中，我注重基础知识的积累，同时能够将所学应用到实际需求里。
-                        遇到问题时，我会先分析原因再尝试多种解决思路，并在必要时向同学或老师请教。
-                        我能接受任务节奏与压力，保持稳定的学习投入；同时我也重视团队协作，愿意承担自己的职责。
-                        在未来的工作中，我希望继续提升工程能力与学习能力，把严谨的态度延续到每一次交付。
-                        同时，我对技术细节保持好奇心，遇到新知识愿意快速查阅资料并做出验证。
-                        无论是文档编写还是代码实现，我都希望做到清晰、可维护、可复用。
-                        我相信只要坚持目标、持续迭代，就能在技术与表达上不断成长，成为更可靠的团队成员。
-                        希望在团队中持续进步，为项目交付贡献稳定的力量。
-                    </p>
-                </div>
-            </div>
+    <form class="info-form" action="#" method="post">
+      <section class="form-section">
+        <h2 class="section-title">
+          <span class="section-icon">📋</span>
+          基本信息
+        </h2>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="name">姓&nbsp;&nbsp;&nbsp;&nbsp;名</label>
+            <input type="text" id="name" name="name" placeholder="请输入您的姓名" required>
+          </div>
+          <div class="form-group">
+            <label for="ename">英文名</label>
+            <input type="text" id="ename" name="ename" placeholder="English Name">
+          </div>
+          <div class="form-group">
+            <label for="gender">性&nbsp;&nbsp;&nbsp;&nbsp;别</label>
+            <select id="gender" name="gender" required>
+              <option value="">请选择</option>
+              <option value="male">男</option>
+              <option value="female">女</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="birthday">出生日期</label>
+            <input type="date" id="birthday" name="birthday" required>
+          </div>
+          <div class="form-group">
+            <label for="nation">民&nbsp;&nbsp;&nbsp;&nbsp;族</label>
+            <input type="text" id="nation" name="nation" placeholder="请输入民族" required>
+          </div>
+          <div class="form-group">
+            <label for="politics">政治面貌</label>
+            <select id="politics" name="politics">
+              <option value="">请选择</option>
+              <option value="party">中共党员</option>
+              <option value="预备">预备党员</option>
+              <option value="league">共青团员</option>
+              <option value="mass">群众</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="idcard">身份证号</label>
+            <input type="text" id="idcard" name="idcard" pattern="[0-9]{17}[0-9X]" placeholder="18位身份证号码" required>
+          </div>
+          <div class="form-group">
+            <label for="blood">血&nbsp;&nbsp;&nbsp;&nbsp;型</label>
+            <select id="blood" name="blood">
+              <option value="">请选择</option>
+              <option value="A">A型</option>
+              <option value="B">B型</option>
+              <option value="O">O型</option>
+              <option value="AB">AB型</option>
+            </select>
+          </div>
         </div>
-    </div>
+        <div class="form-group full-width">
+          <label for="photo">照片上传</label>
+          <div class="photo-upload">
+            <input type="file" id="photo" name="photo" accept="image/*">
+            <span class="upload-tip">支持JPG、PNG格式，建议尺寸120×160像素</span>
+          </div>
+        </div>
+      </section>
 
-    <aside class="fixed-ad" aria-label="固定广告" id="fixedAd">
-        <button class="ad-close" type="button" aria-label="关闭广告" id="adCloseBtn">×</button>
-        <p class="ad-title">精选岗位推荐</p>
-        <p class="ad-text">前端实习生、物联网开发实习生火热招聘中</p>
-        <a class="ad-link" href="#" aria-label="查看岗位详情">立即查看</a>
-    </aside>
+      <section class="form-section">
+        <h2 class="section-title">
+          <span class="section-icon">📞</span>
+          联系方式
+        </h2>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="phone">手机号码</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" placeholder="11位手机号码" required>
+          </div>
+          <div class="form-group">
+            <label for="email">电子邮箱</label>
+            <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+          </div>
+          <div class="form-group">
+            <label for="qq">QQ号码</label>
+            <input type="text" id="qq" name="qq" pattern="[0-9]{5,10}" placeholder="请输入QQ号码">
+          </div>
+          <div class="form-group">
+            <label for="wechat">微&nbsp;&nbsp;&nbsp;&nbsp;信</label>
+            <input type="text" id="wechat" name="wechat" placeholder="请输入微信号码">
+          </div>
+        </div>
+        <div class="form-group full-width">
+          <label for="address">家庭住址</label>
+          <input type="text" id="address" name="address" placeholder="请输入详细地址" required>
+        </div>
+      </section>
 
-    <script>
-        (function () {
-            var closeBtn = document.getElementById("adCloseBtn");
-            var ad = document.getElementById("fixedAd");
-            if (!closeBtn || !ad) return;
-            closeBtn.addEventListener("click", function () {
-                ad.style.display = "none";
-            });
-        })();
-    </script>
+      <section class="form-section">
+        <h2 class="section-title">
+          <span class="section-icon">🎓</span>
+          教育背景
+        </h2>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="university">最高学历</label>
+            <select id="university" name="university" required>
+              <option value="">请选择</option>
+              <option value="high">高中/中专</option>
+              <option value="college">大专</option>
+              <option value="bachelor">本科</option>
+              <option value="master">硕士</option>
+              <option value="doctor">博士</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="major">专&nbsp;&nbsp;&nbsp;&nbsp;业</label>
+            <input type="text" id="major" name="major" placeholder="请输入所学专业" required>
+          </div>
+          <div class="form-group">
+            <label for="school">毕业院校</label>
+            <input type="text" id="school" name="school" placeholder="请输入毕业学校" required>
+          </div>
+          <div class="form-group">
+            <label for="graduation">毕业时间</label>
+            <input type="month" id="graduation" name="graduation">
+          </div>
+        </div>
+      </section>
+
+      <section class="form-section">
+        <h2 class="section-title">
+          <span class="section-icon">💼</span>
+          工作信息
+        </h2>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="job">职&nbsp;&nbsp;&nbsp;&nbsp;称</label>
+            <input type="text" id="job" name="job" placeholder="请输入职称">
+          </div>
+          <div class="form-group">
+            <label for="position">职&nbsp;&nbsp;&nbsp;&nbsp;位</label>
+            <input type="text" id="position" name="position" placeholder="请输入职位">
+          </div>
+          <div class="form-group">
+            <label for="company">工作单位</label>
+            <input type="text" id="company" name="company" placeholder="请输入工作单位">
+          </div>
+          <div class="form-group">
+            <label for="workyears">工作年限</label>
+            <input type="number" id="workyears" name="workyears" min="0" max="50" placeholder="年">
+          </div>
+        </div>
+      </section>
+
+      <section class="form-section">
+        <h2 class="section-title">
+          <span class="section-icon">⭐</span>
+          技能特长
+        </h2>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="language">语言能力</label>
+            <input type="text" id="language" name="language" placeholder="如：英语CET-6">
+          </div>
+          <div class="form-group">
+            <label for="computer">计算机水平</label>
+            <input type="text" id="computer" name="computer" placeholder="如：熟练Office办公软件">
+          </div>
+        </div>
+        <div class="form-group full-width">
+          <label>专业技能</label>
+          <div class="skill-tags">
+            <label class="skill-tag">
+              <input type="checkbox" name="skills" value="programming"> 编程开发
+            </label>
+            <label class="skill-tag">
+              <input type="checkbox" name="skills" value="design"> UI设计
+            </label>
+            <label class="skill-tag">
+              <input type="checkbox" name="skills" value="data"> 数据分析
+            </label>
+            <label class="skill-tag">
+              <input type="checkbox" name="skills" value="network"> 网络技术
+            </label>
+            <label class="skill-tag">
+              <input type="checkbox" name="skills" value="document"> 文档管理
+            </label>
+            <label class="skill-tag">
+              <input type="checkbox" name="skills" value="communication"> 沟通协调
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <section class="form-section">
+        <h2 class="section-title">
+          <span class="section-icon">🎯</span>
+          兴趣爱好
+        </h2>
+        <div class="form-group full-width">
+          <label>个人爱好</label>
+          <div class="hobby-tags">
+            <label class="hobby-tag">
+              <input type="checkbox" name="hobbies" value="reading"> 📚 阅读
+            </label>
+            <label class="hobby-tag">
+              <input type="checkbox" name="hobbies" value="music"> 🎵 音乐
+            </label>
+            <label class="hobby-tag">
+              <input type="checkbox" name="hobbies" value="sports"> ⚽ 运动
+            </label>
+            <label class="hobby-tag">
+              <input type="checkbox" name="hobbies" value="travel"> ✈️ 旅游
+            </label>
+            <label class="hobby-tag">
+              <input type="checkbox" name="hobbies" value="cooking"> 🍳 烹饪
+            </label>
+            <label class="hobby-tag">
+              <input type="checkbox" name="hobbies" value="photography"> 📷 摄影
+            </label>
+            <label class="hobby-tag">
+              <input type="checkbox" name="hobbies" value="gaming"> 🎮 游戏
+            </label>
+            <label class="hobby-tag">
+              <input type="checkbox" name="hobbies" value="movies"> 🎬 电影
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <section class="form-section">
+        <h2 class="section-title">
+          <span class="section-icon">✏️</span>
+          自我介绍
+        </h2>
+        <div class="form-group full-width">
+          <label for="introduction">个人简介</label>
+          <textarea id="introduction" name="introduction" rows="6" placeholder="请简要介绍您的个人经历、特长、优势等..."></textarea>
+        </div>
+        <div class="form-group full-width">
+          <label for="motto">人生格言</label>
+          <input type="text" id="motto" name="motto" placeholder="请输入您的人生格言或座右铭">
+        </div>
+      </section>
+
+      <div class="form-buttons">
+        <button type="submit" class="btn btn-submit">提 交 表 单</button>
+        <button type="reset" class="btn btn-reset">重 置 内 容</button>
+      </div>
+    </form>
+
+    <footer class="page-footer">
+      <p>© 2026 个人信息登记表 | 请确保所填信息真实有效</p>
+    </footer>
+  </div>
 </body>
 </html>
