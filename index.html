@@ -1,270 +1,81 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>个人信息登记表</title>
-  <link rel="stylesheet" href="index.css">
-  <script src="index.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实验七 - 美丽九宫格</title>
+    <link rel="stylesheet" href="lab7.css">
 </head>
 <body>
-  <div class="page-container">
-    <header class="page-header">
-      <h1 class="main-title">个 人 信 息 登 记 表</h1>
-      <p class="subtitle">Personal Information Registration Form</p>
-    </header>
+    <div id="top"></div>
+    <a class="back-home" href="#top" aria-label="返回首页">返回首页</a>
 
-    <form class="info-form" action="#" method="post">
-      <section class="form-section">
-        <h2 class="section-title">
-          <span class="section-icon">📋</span>
-          基本信息
-        </h2>
-        <div class="form-grid">
-          <div class="form-group">
-            <label for="name">姓&nbsp;&nbsp;&nbsp;&nbsp;名</label>
-            <input type="text" id="name" name="name" placeholder="请输入您的姓名" required>
-          </div>
-          <div class="form-group">
-            <label for="ename">英文名</label>
-            <input type="text" id="ename" name="ename" placeholder="English Name">
-          </div>
-          <div class="form-group">
-            <label for="gender">性&nbsp;&nbsp;&nbsp;&nbsp;别</label>
-            <select id="gender" name="gender" required>
-              <option value="">请选择</option>
-              <option value="male">男</option>
-              <option value="female">女</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="birthday">出生日期</label>
-            <input type="date" id="birthday" name="birthday" required>
-          </div>
-          <div class="form-group">
-            <label for="nation">民&nbsp;&nbsp;&nbsp;&nbsp;族</label>
-            <input type="text" id="nation" name="nation" placeholder="请输入民族" required>
-          </div>
-          <div class="form-group">
-            <label for="politics">政治面貌</label>
-            <select id="politics" name="politics">
-              <option value="">请选择</option>
-              <option value="party">中共党员</option>
-              <option value="预备">预备党员</option>
-              <option value="league">共青团员</option>
-              <option value="mass">群众</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="idcard">身份证号</label>
-            <input type="text" id="idcard" name="idcard" pattern="[0-9]{17}[0-9X]" placeholder="18位身份证号码" required>
-          </div>
-          <div class="form-group">
-            <label for="blood">血&nbsp;&nbsp;&nbsp;&nbsp;型</label>
-            <select id="blood" name="blood">
-              <option value="">请选择</option>
-              <option value="A">A型</option>
-              <option value="B">B型</option>
-              <option value="O">O型</option>
-              <option value="AB">AB型</option>
-            </select>
-          </div>
-        </div>
-        <div class="form-group full-width">
-          <label for="photo">照片上传</label>
-          <div class="photo-upload">
-            <input type="file" id="photo" name="photo" accept="image/*">
-            <span class="upload-tip">支持JPG、PNG格式，建议尺寸120×160像素</span>
-          </div>
-        </div>
-      </section>
+    <main class="lab7">
+        <header class="lab7-header">
+            <h1 class="lab7-title">烟台理工学院校园首页</h1>
+            <p class="lab7-subtitle">3行3列九宫格布局（实验七）</p>
+            <p class="lab7-subtitle" style="margin-top: 6px;">
+                第一行浮动：底图 hover 放大 1.5 倍；标题 hover 顺时针旋转 45°。
+                第二行绝对定位：悬停倾斜 30°。第三行常规布局：2D 动画悬浮。
+            </p>
+            <p class="lab7-subtitle" style="margin-top: 6px;">
+                示例首页栏目：概况、新闻、院系、科研、风光、服务、招生、公告、联系。
+            </p>
+        </header>
 
-      <section class="form-section">
-        <h2 class="section-title">
-          <span class="section-icon">📞</span>
-          联系方式
-        </h2>
-        <div class="form-grid">
-          <div class="form-group">
-            <label for="phone">手机号码</label>
-            <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" placeholder="11位手机号码" required>
-          </div>
-          <div class="form-group">
-            <label for="email">电子邮箱</label>
-            <input type="email" id="email" name="email" placeholder="example@domain.com" required>
-          </div>
-          <div class="form-group">
-            <label for="qq">QQ号码</label>
-            <input type="text" id="qq" name="qq" pattern="[0-9]{5,10}" placeholder="请输入QQ号码">
-          </div>
-          <div class="form-group">
-            <label for="wechat">微&nbsp;&nbsp;&nbsp;&nbsp;信</label>
-            <input type="text" id="wechat" name="wechat" placeholder="请输入微信号码">
-          </div>
-        </div>
-        <div class="form-group full-width">
-          <label for="address">家庭住址</label>
-          <input type="text" id="address" name="address" placeholder="请输入详细地址" required>
-        </div>
-      </section>
+        <section class="theme theme--float" aria-label="主题一（浮动）">
+            <a class="tile" href="#top" aria-label="学院概况">
+                <div class="tile-badge" aria-hidden="true">概况</div>
+                <div class="tile-bg tile-bg--1" aria-hidden="true"></div>
+                <div class="tile-title">学院概况 · 办学定位</div>
+            </a>
+            <a class="tile" href="#top" aria-label="校园新闻">
+                <div class="tile-badge" aria-hidden="true">新闻</div>
+                <div class="tile-bg tile-bg--2" aria-hidden="true"></div>
+                <div class="tile-title">校园新闻 · 本周要闻</div>
+            </a>
+            <a class="tile" href="#top" aria-label="院系设置">
+                <div class="tile-badge" aria-hidden="true">院系</div>
+                <div class="tile-bg tile-bg--3" aria-hidden="true"></div>
+                <div class="tile-title">院系设置 · 专业导航</div>
+            </a>
+        </section>
 
-      <section class="form-section">
-        <h2 class="section-title">
-          <span class="section-icon">🎓</span>
-          教育背景
-        </h2>
-        <div class="form-grid">
-          <div class="form-group">
-            <label for="university">最高学历</label>
-            <select id="university" name="university" required>
-              <option value="">请选择</option>
-              <option value="high">高中/中专</option>
-              <option value="college">大专</option>
-              <option value="bachelor">本科</option>
-              <option value="master">硕士</option>
-              <option value="doctor">博士</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="major">专&nbsp;&nbsp;&nbsp;&nbsp;业</label>
-            <input type="text" id="major" name="major" placeholder="请输入所学专业" required>
-          </div>
-          <div class="form-group">
-            <label for="school">毕业院校</label>
-            <input type="text" id="school" name="school" placeholder="请输入毕业学校" required>
-          </div>
-          <div class="form-group">
-            <label for="graduation">毕业时间</label>
-            <input type="month" id="graduation" name="graduation">
-          </div>
-        </div>
-      </section>
+        <section class="theme theme--abs" aria-label="主题二（绝对定位）">
+            <a class="tile" href="#top" aria-label="教学科研">
+                <div class="tile-badge tile-badge--abs" aria-hidden="true">科研</div>
+                <div class="tile-bg tile-bg--4" aria-hidden="true"></div>
+                <div class="tile-title">教学科研 · 重点实验室</div>
+            </a>
+            <a class="tile" href="#top" aria-label="校园风光">
+                <div class="tile-badge tile-badge--abs" aria-hidden="true">风光</div>
+                <div class="tile-bg tile-bg--5" aria-hidden="true"></div>
+                <div class="tile-title">校园风光 · 春夏秋冬</div>
+            </a>
+            <a class="tile" href="#top" aria-label="校园服务">
+                <div class="tile-badge tile-badge--abs" aria-hidden="true">服务</div>
+                <div class="tile-bg tile-bg--6" aria-hidden="true"></div>
+                <div class="tile-title">校园服务 · 图书与后勤</div>
+            </a>
+        </section>
 
-      <section class="form-section">
-        <h2 class="section-title">
-          <span class="section-icon">💼</span>
-          工作信息
-        </h2>
-        <div class="form-grid">
-          <div class="form-group">
-            <label for="job">职&nbsp;&nbsp;&nbsp;&nbsp;称</label>
-            <input type="text" id="job" name="job" placeholder="请输入职称">
-          </div>
-          <div class="form-group">
-            <label for="position">职&nbsp;&nbsp;&nbsp;&nbsp;位</label>
-            <input type="text" id="position" name="position" placeholder="请输入职位">
-          </div>
-          <div class="form-group">
-            <label for="company">工作单位</label>
-            <input type="text" id="company" name="company" placeholder="请输入工作单位">
-          </div>
-          <div class="form-group">
-            <label for="workyears">工作年限</label>
-            <input type="number" id="workyears" name="workyears" min="0" max="50" placeholder="年">
-          </div>
-        </div>
-      </section>
-
-      <section class="form-section">
-        <h2 class="section-title">
-          <span class="section-icon">⭐</span>
-          技能特长
-        </h2>
-        <div class="form-grid">
-          <div class="form-group">
-            <label for="language">语言能力</label>
-            <input type="text" id="language" name="language" placeholder="如：英语CET-6">
-          </div>
-          <div class="form-group">
-            <label for="computer">计算机水平</label>
-            <input type="text" id="computer" name="computer" placeholder="如：熟练Office办公软件">
-          </div>
-        </div>
-        <div class="form-group full-width">
-          <label>专业技能</label>
-          <div class="skill-tags">
-            <label class="skill-tag">
-              <input type="checkbox" name="skills" value="programming"> 编程开发
-            </label>
-            <label class="skill-tag">
-              <input type="checkbox" name="skills" value="design"> UI设计
-            </label>
-            <label class="skill-tag">
-              <input type="checkbox" name="skills" value="data"> 数据分析
-            </label>
-            <label class="skill-tag">
-              <input type="checkbox" name="skills" value="network"> 网络技术
-            </label>
-            <label class="skill-tag">
-              <input type="checkbox" name="skills" value="document"> 文档管理
-            </label>
-            <label class="skill-tag">
-              <input type="checkbox" name="skills" value="communication"> 沟通协调
-            </label>
-          </div>
-        </div>
-      </section>
-
-      <section class="form-section">
-        <h2 class="section-title">
-          <span class="section-icon">🎯</span>
-          兴趣爱好
-        </h2>
-        <div class="form-group full-width">
-          <label>个人爱好</label>
-          <div class="hobby-tags">
-            <label class="hobby-tag">
-              <input type="checkbox" name="hobbies" value="reading"> 📚 阅读
-            </label>
-            <label class="hobby-tag">
-              <input type="checkbox" name="hobbies" value="music"> 🎵 音乐
-            </label>
-            <label class="hobby-tag">
-              <input type="checkbox" name="hobbies" value="sports"> ⚽ 运动
-            </label>
-            <label class="hobby-tag">
-              <input type="checkbox" name="hobbies" value="travel"> ✈️ 旅游
-            </label>
-            <label class="hobby-tag">
-              <input type="checkbox" name="hobbies" value="cooking"> 🍳 烹饪
-            </label>
-            <label class="hobby-tag">
-              <input type="checkbox" name="hobbies" value="photography"> 📷 摄影
-            </label>
-            <label class="hobby-tag">
-              <input type="checkbox" name="hobbies" value="gaming"> 🎮 游戏
-            </label>
-            <label class="hobby-tag">
-              <input type="checkbox" name="hobbies" value="movies"> 🎬 电影
-            </label>
-          </div>
-        </div>
-      </section>
-
-      <section class="form-section">
-        <h2 class="section-title">
-          <span class="section-icon">✏️</span>
-          自我介绍
-        </h2>
-        <div class="form-group full-width">
-          <label for="introduction">个人简介</label>
-          <textarea id="introduction" name="introduction" rows="6" placeholder="请简要介绍您的个人经历、特长、优势等..."></textarea>
-        </div>
-        <div class="form-group full-width">
-          <label for="motto">人生格言</label>
-          <input type="text" id="motto" name="motto" placeholder="请输入您的人生格言或座右铭">
-        </div>
-      </section>
-
-      <div class="form-buttons">
-        <button type="submit" class="btn btn-submit">提 交 表 单</button>
-        <button type="reset" class="btn btn-reset">重 置 内 容</button>
-      </div>
-    </form>
-
-    <footer class="page-footer">
-      <p>© 2026 个人信息登记表 | 请确保所填信息真实有效</p>
-    </footer>
-  </div>
+        <section class="theme theme--flex" aria-label="主题三（常规布局）">
+            <a class="tile" href="#top" aria-label="招生就业">
+                <div class="tile-badge" aria-hidden="true">招生</div>
+                <div class="tile-bg tile-bg--7" aria-hidden="true"></div>
+                <div class="tile-title">招生就业 · 报考指南</div>
+            </a>
+            <a class="tile" href="#top" aria-label="通知公告">
+                <div class="tile-badge" aria-hidden="true">公告</div>
+                <div class="tile-bg tile-bg--8" aria-hidden="true"></div>
+                <div class="tile-title">通知公告 · 校历安排</div>
+            </a>
+            <a class="tile" href="#top" aria-label="联系我们">
+                <div class="tile-badge" aria-hidden="true">联系</div>
+                <div class="tile-bg tile-bg--9" aria-hidden="true"></div>
+                <div class="tile-title">联系我们 · 校园地图</div>
+            </a>
+        </section>
+    </main>
 </body>
 </html>
