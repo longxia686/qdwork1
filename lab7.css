@@ -142,16 +142,16 @@ body {
     transition: transform 0.35s ease;
 }
 
-/* 9个底图：使用在线图片地址 */
-.tile-bg--1 { background: url("https://picsum.photos/id/1015/800/600") center/cover no-repeat; }
-.tile-bg--2 { background: url("https://picsum.photos/id/1031/800/600") center/cover no-repeat; }
-.tile-bg--3 { background: url("https://picsum.photos/id/1043/800/600") center/cover no-repeat; }
-.tile-bg--4 { background: url("https://picsum.photos/id/1050/800/600") center/cover no-repeat; }
-.tile-bg--5 { background: url("https://picsum.photos/id/1069/800/600") center/cover no-repeat; }
-.tile-bg--6 { background: url("https://picsum.photos/id/1074/800/600") center/cover no-repeat; }
-.tile-bg--7 { background: url("https://picsum.photos/id/1084/800/600") center/cover no-repeat; }
-.tile-bg--8 { background: url("https://picsum.photos/id/1080/800/600") center/cover no-repeat; }
-.tile-bg--9 { background: url("https://picsum.photos/id/110/800/600") center/cover no-repeat; }
+/* 9个底图：图片与 index.html 放在同级目录 */
+.tile-bg--1 { background: url("1.jpg") center/cover no-repeat; }
+.tile-bg--2 { background: url("2.jpg") center/cover no-repeat; }
+.tile-bg--3 { background: url("3.jpg") center/cover no-repeat; }
+.tile-bg--4 { background: url("4.jpg") center/cover no-repeat; }
+.tile-bg--5 { background: url("5.jpg") center/cover no-repeat; }
+.tile-bg--6 { background: url("6.jpg") center/cover no-repeat; }
+.tile-bg--7 { background: url("7.jpg") center/cover no-repeat; }
+.tile-bg--8 { background: url("8.jpg") center/cover no-repeat; }
+.tile-bg--9 { background: url("9.jpg") center/cover no-repeat; }
 
 /* ========== 第 1 行：浮动布局 ========== */
 .theme--float {
