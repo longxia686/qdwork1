@@ -142,16 +142,16 @@ body {
     transition: transform 0.35s ease;
 }
 
-/* 9个“底图”（用渐变代替图片，保证你目录没图也能跑） */
-.tile-bg--1 { background: linear-gradient(135deg, #4facfe, #00f2fe); }
-.tile-bg--2 { background: linear-gradient(135deg, #a18cd1, #fbc2eb); }
-.tile-bg--3 { background: linear-gradient(135deg, #43e97b, #38f9d7); }
-.tile-bg--4 { background: linear-gradient(135deg, #56ab2f, #a8e063); }
-.tile-bg--5 { background: linear-gradient(135deg, #f794a4, #fdd6bd); }
-.tile-bg--6 { background: linear-gradient(135deg, #36d1dc, #5b86e5); }
-.tile-bg--7 { background: linear-gradient(135deg, #ee7752, #e73c7e, #23a6d5); }
-.tile-bg--8 { background: linear-gradient(135deg, #ff512f, #dd2476); }
-.tile-bg--9 { background: linear-gradient(135deg, #3a7bd5, #00d2ff); }
+/* 9个底图：使用在线图片地址 */
+.tile-bg--1 { background: url("https://picsum.photos/id/1015/800/600") center/cover no-repeat; }
+.tile-bg--2 { background: url("https://picsum.photos/id/1031/800/600") center/cover no-repeat; }
+.tile-bg--3 { background: url("https://picsum.photos/id/1043/800/600") center/cover no-repeat; }
+.tile-bg--4 { background: url("https://picsum.photos/id/1050/800/600") center/cover no-repeat; }
+.tile-bg--5 { background: url("https://picsum.photos/id/1069/800/600") center/cover no-repeat; }
+.tile-bg--6 { background: url("https://picsum.photos/id/1074/800/600") center/cover no-repeat; }
+.tile-bg--7 { background: url("https://picsum.photos/id/1084/800/600") center/cover no-repeat; }
+.tile-bg--8 { background: url("https://picsum.photos/id/1080/800/600") center/cover no-repeat; }
+.tile-bg--9 { background: url("https://picsum.photos/id/110/800/600") center/cover no-repeat; }
 
 /* ========== 第 1 行：浮动布局 ========== */
 .theme--float {
